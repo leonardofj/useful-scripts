@@ -30,3 +30,14 @@ def string_to_list_dict(text: str) -> List[Any] | ast.Dict[str, Any]:
     :return: list or dict
     """
     return ast.literal_eval(text)
+
+
+def merge_lists(list_1, list_2):
+    """
+    Merges two lists, without duplicates.
+    :param list_1:
+    :param list_2:
+    :return: joinned lists
+    """
+
+    return list(set(list_1 + list_2))
